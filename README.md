@@ -38,6 +38,36 @@ Login system with per-user sessions (via `streamlit-authenticator`), separating 
 | Storage | SQLite (chat history) |
 
 ---
+## 📌 System Architecture
+
+```
+                         User Login
+                             │
+                             ▼
+                   Authentication System
+                             │
+        ┌────────────────────┼────────────────────┐
+        ▼                    ▼                    ▼
+ University Q&A        Test Prep Engine      Marks Dashboard
+   (RAG Chatbot)        (Agent Pipeline)      (Role-Based)
+        │                    │                    │
+        ▼                    ▼                    ▼
+  Chroma Vector DB      Syllabus PDF Text      SQLite Database
+   (Policy PDFs)         (PyMuPDF Extract)      (Marks/Attendance)
+        │                    │                    │
+        └────────────────────┼────────────────────┘
+                             ▼
+                   Groq LLM (via LangChain / LangGraph)
+                             │
+        ┌────────────────────┼────────────────────┐
+        ▼                    ▼                    ▼
+  Cited Answers        Generated MCQs        Analytics & Insights
+                             │
+                             ▼
+                  Interactive Streamlit Dashboard
+```
+
+---
 
 ## 📂 Project Structure
 
