@@ -1,4 +1,4 @@
-## 🎓 Overview
+## 🎓 UniDesk Overview
 
 UniDesk is an **AI-powered university portal** that streamlines academic support and campus administration through a unified platform. It integrates a **Retrieval-Augmented Generation (RAG)**-based university policy assistant, an **AI-driven test preparation engine**, and a **secure role-based academic dashboard** into a single Streamlit application.
 
