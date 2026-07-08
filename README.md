@@ -93,30 +93,3 @@ streamlit run app.py
 ```
 The app will open at `http://localhost:8501`.
 
----
-
-## 👤 Login Credentials
-
-Update the credentials dictionary in `app.py` with your own usernames/passwords before deploying. By default, the app distinguishes between:
-- `admin` — full access, including class-wide marks dashboard and regulations PDF management
-- student accounts — access to Q&A, test prep, and their own marks record only
-
-> ⚠️ Do not commit real credentials to a public repository. Use `.streamlit/secrets.toml` or environment variables for production deployments.
-
----
-
-## 🗺️ Roadmap
-- [ ] Move credentials to `secrets.toml` / environment-based auth
-- [ ] Add support for multiple courses/semesters
-- [ ] Export quiz results as PDF
-- [ ] Deploy to Streamlit Community Cloud
-
----
-
-## 📄 License
-This project is open source under the [MIT License](LICENSE).
-
----
-
-## 🙌 Acknowledgements
-Built as a university project exploring RAG pipelines, agentic MCQ generation, and role-based academic dashboards.
