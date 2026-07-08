@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Font and Canvas Override */
+html, body, [class*="css"], .stApp {
+    font-family: 'Outfit', sans-serif !important;
+}
+html, body, .stApp {
+    background-color: #f5f7f9 !important;
+    color: #1f2937 !important;
+}
+
+/* Hide Streamlit default header */
+header[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+
+/* Adjust page spacing */
+.main .block-container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* --- SIMULATED TOP BAR --- */
+.cats-top-bar {
+    background-color: #0d5c4f !important;
+    color: #ffffff !important;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.cats-top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.cats-logo {
+    font-size: 1.6rem;
+}
+.cats-app-name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+.cats-top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cats-session-badge {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* --- SIDEBAR OVERRIDES --- */
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 2.5px solid #f2b8c6 !important;
+}
+
+/* Sidebar user card */
+.cats-user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+}
+.cats-avatar {
+    width: 68px;
+    height: 68px;
+    background-color: #e6f2ef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    border: 2px solid #0d5c4f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.cats-user-name {
+    font-weight: 700;
+    color: #1f2937;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+.cats-user-role {
+    color: #6b7280;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Sidebar Section Headers */
+[data-testid="stSidebar"] h2 {
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    color: #0d5c4f !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Sidebar custom labels */
+.sidebar-section-title {
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    color: #0d5c4f !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* --- TABS OVERRIDES --- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: #e5e7eb !important;
+    padding: 6px !important;
+    border-radius: 8px !important;
+    border: 1px solid #d1d5db !important;
+}
+.stTabs [data-baseweb="tab"] {
+    height: auto !important;
+    padding: 8px 18px !important;
+    background-color: transparent !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    color: #4b5563 !important;
+    border: none !important;
+    transition: all 0.2s ease !important;
+}
+.stTabs [data-baseweb="tab"]:hover {
+    color: #0d5c4f !important;
+    background-color: rgba(13, 92, 79, 0.05) !important;
+}
+.stTabs [aria-selected="true"] {
+    background-color: #0d5c4f !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    box-shadow: 0 2px 6px rgba(13, 92, 79, 0.25) !important;
+}
+.stTabs [data-baseweb="tab-highlight-bar"] {
+    display: none !important;
+}
+
+/* --- CONTENT CARDS --- */
+div[data-testid="stVerticalBlockBorderWrapper"], .glass-card {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    margin-bottom: 20px !important;
+    transition: transform 0.2s ease, border-color 0.2s ease !important;
+}
+.glass-card:hover {
+    border-color: #0d5c4f !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Glass card titles and values */
+.card-title {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    color: #6b7280 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 8px !important;
+}
+.card-value {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    margin-bottom: 6px !important;
+}
+.card-desc {
+    font-size: 0.8rem !important;
+    color: #6b7280 !important;
+}
+
+/* --- BUTTONS --- */
+.stButton > button {
+    border-radius: 8px !important;
+    padding: 0.5rem 1.4rem !important;
+    font-weight: 600 !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    width: 100%;
+}
+.stButton > button[kind="primary"] {
+    background: #0d5c4f !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(13, 92, 79, 0.15) !important;
+}
+.stButton > button[kind="primary"]:hover {
+    background: #0b493f !important;
+    box-shadow: 0 4px 8px rgba(13, 92, 79, 0.25) !important;
+    transform: translateY(-1px) !important;
+    color: #ffffff !important;
+}
+.stButton > button[kind="secondary"], .stButton > button:not([kind="primary"]) {
+    background: #ffffff !important;
+    color: #0d5c4f !important;
+    border: 1px solid #0d5c4f !important;
+    box-shadow: none !important;
+}
+.stButton > button[kind="secondary"]:hover, .stButton > button:not([kind="primary"]):hover {
+    background: #e6f2ef !important;
+    color: #0d5c4f !important;
+    border-color: #0d5c4f !important;
+    transform: translateY(-1px) !important;
+}
+.stButton > button:active {
+    transform: translateY(1px) !important;
+}
+
+/* --- FORM WIDGETS --- */
+.stTextInput input, .stSelectbox [role="combobox"], .stSlider, .stFileUploader {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+}
+.stTextInput input {
+    border: 1px solid #d1d5db !important;
+    color: #1f2937 !important;
+}
+.stTextInput input:focus {
+    border-color: #0d5c4f !important;
+    box-shadow: 0 0 0 2px rgba(13, 92, 79, 0.2) !important;
+}
+
+/* Adjust file uploader button spacing */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: #f9fafb !important;
+    border: 1px dashed #d1d5db !important;
+    border-radius: 8px !important;
+}
+[data-testid="stFileUploaderDropzone"] button {
+    background-color: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+    color: #1f2937 !important;
+}
+
+/* --- CHAT DIALOGUE --- */
+[data-testid="stChatMessage"] {
+    padding: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 16px !important;
+}
+/* User bubble */
+div[data-testid="stChatMessage"]:has(span[aria-label="👤"]) {
+    flex-direction: row-reverse !important;
+}
+div[data-testid="stChatMessage"]:has(span[aria-label="👤"]) [data-testid="stChatMessageContent"] {
+    background-color: #e6f2ef !important;
+    border: 1px solid #cce5df !important;
+    color: #1f2937 !important;
+    border-radius: 12px 0 12px 12px !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+}
+/* Assistant bubble */
+div[data-testid="stChatMessage"]:has(span[aria-label="🤖"]) [data-testid="stChatMessageContent"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #1f2937 !important;
+    border-radius: 0 12px 12px 12px !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+}
+
+/* --- EXPANDERS --- */
+[data-testid="stExpander"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+}
+[data-testid="stExpanderSummary"] {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+}
+
+/* --- NOTICE BANNER --- */
+.cats-notice-banner {
+    background-color: #fdf6e3 !important;
+    border-left: 4px solid #0d5c4f !important;
+    border-top: 1px solid #f2e3c9 !important;
+    border-right: 1px solid #f2e3c9 !important;
+    border-bottom: 1px solid #f2e3c9 !important;
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    color: #1f2937 !important;
+    margin-bottom: 16px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+}
+.cats-notice-icon {
+    font-size: 1.15rem !important;
+    line-height: 1 !important;
+}
+.cats-notice-content {
+    font-size: 0.92rem !important;
+    line-height: 1.4 !important;
+}
+
+/* --- DATA TABLES --- */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.cats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    text-align: left;
+    color: #1f2937;
+}
+.cats-table th {
+    background-color: #f3f4f6;
+    font-weight: 700;
+    color: #1f2937;
+    padding: 12px 16px;
+    border-bottom: 2px solid #e5e7eb;
+}
+.cats-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+.cats-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+/* Summary/Class Average row styling */
+.cats-table .summary-row {
+    background-color: #f3f4f6 !important;
+    font-weight: 700 !important;
+    border-top: 2px solid #e5e7eb !important;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+/* MCQ Badges */
+.mcq-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+.badge-easy { background: #ecfdf5 !important; color: #047857 !important; border: 1px solid #a7f3d0 !important; }
+.badge-medium { background: #fffbeb !important; color: #b45309 !important; border: 1px solid #fde68a !important; }
+.badge-hard { background: #fef2f2 !important; color: #b91c1c !important; border: 1px solid #fecaca !important; }
+.badge-challenge { background: #fef2f2 !important; color: #b91c1c !important; border: 1px solid #b91c1c !important; }

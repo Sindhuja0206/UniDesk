@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+
+# Environment variables / Credentials
+.env
+
+# Database / Vectorstore
+vectorstore/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Streamlit logs/cache
+.streamlit/runtime/
+.streamlit/secrets.toml
+
+# Local uploaded/ingested documents
+data/pdfs/
+data/university_pdfs/
