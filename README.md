@@ -123,3 +123,26 @@ streamlit run app.py
 ```
 The app will open at `http://localhost:8501`.
 
+---
+
+## 🌍 Use Cases
+
+- 🎓 Universities & Colleges
+- 💻 Learning Management Systems (LMS)
+- 📚 Coaching Institutes / Test Prep Centers
+- 👩‍🎓 Students
+- 👨‍🏫 Faculty & Academic Advisors
+
+---
+---
+
+## 🚀 Deployment
+
+UniDesk can be deployed on:
+- ☁️ Streamlit Community Cloud
+- 🚂 Railway
+- 🎨 Render
+- 🤗 Hugging Face Spaces
+- 🐳 Docker
+
+---
