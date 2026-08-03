@@ -3,8 +3,7 @@
 UniDesk is an **AI-powered university portal** that streamlines academic support and campus administration through a unified platform. It integrates a **Retrieval-Augmented Generation (RAG)**-based university policy assistant, an **AI-driven test preparation engine**, and a **secure role-based academic dashboard** into a single Streamlit application.
 
 Built with **Streamlit, LangChain, LangGraph, Groq, ChromaDB, SQLite, and PyMuPDF**, UniDesk leverages **RAG** and **AI agent workflows** to deliver accurate, source-cited answers from official university documents, generate personalized MCQs from syllabus PDFs, and provide role-based access to marks, attendance, rankings, and academic insights.
-## LIVE DEMO ##
-https://unidesk-f8pxc3knrhqdbatbr95c9u.streamlit.app/
+
 
 ## LIVE DEMO ##
 https://unidesk-f8pxc3knrhqdbatbr95c9u.streamlit.app/
