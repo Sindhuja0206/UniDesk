@@ -6,6 +6,18 @@ Built with **Streamlit, LangChain, LangGraph, Groq, ChromaDB, SQLite, and PyMuPD
 ## LIVE DEMO ##
 https://unidesk-f8pxc3knrhqdbatbr95c9u.streamlit.app/
 
+## LIVE DEMO ##
+https://unidesk-f8pxc3knrhqdbatbr95c9u.streamlit.app/
+
+### 🔑 Demo Login Credentials
+
+| Role | Username | Password |
+|------|----------|----------|
+| Admin | `admin` | `admin123` |
+| Student | `sindhuja` | `student123` |
+
+> **Note:** All student accounts use the password `student123`. Log in as `admin` to access the full Student Dashboard with class analytics. Log in as any student to view your individual marks, attendance, and class rank.
+
 ### ✨ Key Highlights
 
 - 🤖 **RAG-powered University Assistant** with source-cited responses from official university documents.
